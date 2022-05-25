@@ -1,0 +1,29 @@
+.rodape
+{
+    margin: 0px 20px 0px 20px;
+
+    text-align: right;
+}
+hr 
+{
+    display: block;
+
+    width: auto;
+    border: 0;
+    height: 1px;
+    background: rgb(216, 216, 216);
+}
+.RB3
+{
+    width: auto;
+    height: auto;
+    
+    padding-left: 20px;
+    padding-right: auto;
+
+    display: inline;
+}
+.ano
+{
+    display: inline;
+}

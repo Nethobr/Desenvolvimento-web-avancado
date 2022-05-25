@@ -1,0 +1,19 @@
+<form>
+    <mat-card>
+        <mat-card-content>
+            <mat-form-field>
+                    <input matInput type="text" placeholder="Título do post" name="nome" [(ngModel)]="post.nome" disabled>
+                </mat-form-field> 
+            <mat-form-field>
+                    <input matInput type="date" value="" name="dataPost" [(ngModel)]="post.data" disabled>
+                </mat-form-field>
+            <mat-form-field>
+                <input matInput type="text" placeholder="Conteúdo" name="conteudo" [(ngModel)]="post.conteudo" disabled>
+            </mat-form-field>
+        </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button class="btn salvar" (click)="exculirPost()">DETELAR?!</button>
+        <button mat-raised-button class="btn cancelar" routerLink="/posts">Cancelar</button>
+      </mat-card-actions>
+    </mat-card>
+</form>

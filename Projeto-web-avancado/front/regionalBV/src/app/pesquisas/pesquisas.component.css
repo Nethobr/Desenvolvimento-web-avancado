@@ -1,0 +1,159 @@
+/* Structure */
+#teste
+{
+    display: block;
+    margin: 0px auto 0px auto;
+
+    width: 100%;
+
+    box-shadow: unset;
+
+    background-color: rgb(255, 255, 255);
+
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+}
+#teste::-webkit-scrollbar 
+{
+    width: 10px;
+}
+#teste::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+/* Handle */
+#teste::-webkit-scrollbar-thumb {
+    background: rgb(91, 91, 91); 
+    transition: 0.5s;
+  }
+  
+  /* Handle on hover */
+#teste::-webkit-scrollbar-thumb:hover {
+    background: rgb(61, 61, 61); 
+    transition: 0.5s;
+  }
+
+table {
+    display: block;
+    margin: 0px auto 0px auto;
+
+    width: 100%;
+    box-shadow: unset;
+    background-color: transparent;
+  }
+  .mat-form-field {
+    font-size: 10px;
+    width: 95%;
+
+    display: block;
+
+    margin: 0px auto 0px auto;
+  }
+  .example-container {
+    height: 250px;
+    overflow: auto;
+
+  }
+  th
+  {
+    color: rgb(33, 33, 33);
+    font-size: 15px;
+    font-weight: bold;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .tituloPesquisa
+{
+    display: flex;
+    flex-direction: row;
+}
+.nomesPesq
+{
+    flex: 1;
+}
+.idPesq
+{
+    width: auto;
+}
+
+h2
+{
+    margin: 0px;    
+    padding: 0px;
+    height: auto;
+}
+
+.conteudoMain
+{
+    padding: 10px;
+
+    margin-top: 0px;
+
+    text-align: justify;
+}
+
+h3
+{
+    font-weight: 500;
+
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+
+    text-align: right;
+
+    margin: 0px;
+}
+
+.conteudo
+{
+    font-weight: 100;
+
+    font-size: 13px;
+    color: rgb(46, 46, 46);
+    margin: 0px;
+}
+
+.links
+{
+    display: block;
+    margin-left: auto;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    background-color: transparent;
+    border: none;
+}
+ul{ margin-bottom: 25px; }
+li{ margin-left: 10px; text-decoration: underline;}
+
+/* Roda pé */
+.rodaPePost
+{
+    margin: 0px 0px 0px 0px;
+
+    display: flex;
+    flex-direction: row;
+}
+hr
+{
+    margin: 10px 0px 0px auto;
+
+    display: inline;
+    width: 50%;
+
+    border: 0.1px solid rgb(189, 189, 189);
+
+    height: 0px
+}
+.copy
+{
+    margin: 0px auto 0px 0px;
+
+    display: inline;
+    width: auto;
+}
+a { text-decoration: none; }

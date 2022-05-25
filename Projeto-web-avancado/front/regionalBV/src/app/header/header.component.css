@@ -1,0 +1,62 @@
+.backGround
+{
+    display: block;
+    height: 100px;
+    width: 250px;
+
+    background-color: rgb(76, 165, 121); 
+
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 150px;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+
+    transition: 0.5s;
+}
+.backGround:hover
+{
+    transition: 0.5s;
+    background-color: rgb(59, 129, 94); 
+}
+.logo
+{
+    display: block;
+
+    /* Posições */
+    padding-top: 30px;
+
+    text-align: justify;
+}
+.logoUp
+{
+    color: rgb(0, 46, 23);
+    font-family: Arial;
+    font-size: 60px;
+    padding-left: 55px;
+    text-decoration: none; 
+}
+.logoDown
+{
+    color: rgb(227, 255, 231);
+    font-family: Arial;
+    font-size: 17px;
+
+    /* Posições */
+    padding-top: 15px;
+    padding-left: 55px;
+}
+a
+{ 
+    text-decoration: none; 
+    color: rgb(0, 46, 23);
+    transition: 0.5s;
+}
+a:hover
+{ 
+    transition: 0.5s;
+    text-decoration: none; 
+    color: rgb(227, 255, 231);
+}

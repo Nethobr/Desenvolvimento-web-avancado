@@ -1,0 +1,12 @@
+<aside>
+    <h1>MEBROS</h1>
+    <div class = "membros" *ngFor="let a of listMember">
+        <hr/>
+        <img class = "iconMembro" width="60px" src ="{{a.imagem}}">
+        <h2 class = "nomeMembro">{{a.nome}}</h2>
+        <div class = "descMembro">
+            <p>{{a.curso}}.</p>
+            <p>@{{a.instagram}}</p>
+        </div>
+    </div>
+</aside>

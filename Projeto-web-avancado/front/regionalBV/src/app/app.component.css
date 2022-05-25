@@ -1,0 +1,25 @@
+section
+{
+    display: flex;
+    flex-direction: row;
+}
+.mainContent
+{
+    flex: 1;
+
+    font-family: Arial;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.sideBar
+{
+    width: 200px;
+
+    margin-top: -150px;
+    margin-right: 20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,48 @@
+/* Include post */
+.includePost
+{
+    margin-bottom: 10px;
+   
+}
+.btnAdd
+{
+    display: block;
+    margin: 0px auto 0px auto;
+
+    padding: auto;
+
+    /* tamanho */
+    width: 300px;
+    height: auto;
+
+    /* Corpo */
+    border: none;
+    background-color: rgb(58, 58, 58);
+    border-radius: 10px;
+
+    /* Texto */
+    font-weight: 700;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+    /* Animações */
+    transition: 0.5s;
+}
+.btnAdd:hover
+{
+    /* Corpo */
+    background-color: rgb(189, 189, 189);
+
+    /* Texto */
+    color: rgb(0, 0, 0);
+
+    /* Animações */
+    transition: 0.5s;
+}
+b
+{
+    width: 0px;
+    font-weight: 60;
+    font-size: 15px;
+}
+a { text-decoration: none; }

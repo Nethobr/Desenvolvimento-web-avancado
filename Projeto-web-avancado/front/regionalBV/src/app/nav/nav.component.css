@@ -1,0 +1,64 @@
+.navLink
+{
+    margin-top: -20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+    font-family: Arial;
+    font-size: 20px;
+}
+ul
+{
+    display: inline;
+}
+li
+{
+    /* Texto */
+    display: inline;
+    font-size: 20px;
+}
+a
+{
+    display: inline-block;
+    width: auto;
+    height: auto;
+
+    margin: 0px 0px 0px 0px;
+}
+a{ text-decoration: none; color: black; transition: 0.5s;}
+a:hover{ text-decoration: none; color: rgb(59, 129, 94);  transition: 0.5s;}
+
+section
+{
+    display: flex;
+    flex-direction: row;
+}
+.mainNav
+{
+    flex: 1;
+
+    display: inline-block;
+
+    text-align: center;
+
+}
+.sideNav
+{
+    text-align: right;
+    width: auto;
+    margin-right: 220px;
+}
+
+hr
+{
+    border: 0.1px solid rgb(116, 116, 116);
+
+    height: 0px;
+
+    margin-top: 8.5px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    width: 100%;
+}

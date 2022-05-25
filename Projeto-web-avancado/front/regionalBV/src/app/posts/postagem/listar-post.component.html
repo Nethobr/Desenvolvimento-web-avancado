@@ -1,0 +1,60 @@
+<!-- <section class="post">
+    <section class="cabecalhoPost">
+        <h1 class="tituloPost">Título do POST</h1>
+        <div class="membroPost">
+            <p class="dataPost">32/13/2022</p>
+        </div>
+    </section>
+
+    <section class="conteudoPost">
+        <div class="imagem">
+            <img src="./assets/_iconPage.png">
+        </div>
+        <div class="texto">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error odit vero nesciunt, dolores tempora deserunt qui porro tenetur sunt quos incidunt natus, exercitationem in molestias totam animi eos ipsa expedita similique nemo itaque repellat, ipsum debitis temporibus. Minus dolores debitis distinctio odio illum libero eveniet ratione provident magnam saepe neque recusandae, tempore itaque modi earum fugit cumque obcaecati repellendus ipsum quibusdam officiis. Natus minima repellat adipisci tempora excepturi id at? Praesentium dolor perferendis dolorum corporis, molestiae velit ex error, doloremque repellendus veritatis earum aut ratione sapiente! Tempore enim voluptate, corporis minus ex quasi illo repellat iusto dolor numquam explicabo fuga.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero reprehenderit quas natus officiis ab. Perspiciatis qui molestias, dignissimos temporibus doloremque atque veritatis voluptates beatae laborum velit asperiores officia dolores sit nam, praesentium fugit rem sequi unde? Ipsa soluta quaerat, architecto fugiat blanditiis itaque reprehenderit optio unde, eos, officiis sequi obcaecati.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, dignissimos doloribus earum possimus, quibusdam consequuntur, consectetur quis velit cum nobis distinctio obcaecati sunt tempora tempore!</p>
+        </div>
+        
+        
+        <section class="crud">
+            <button class="btn edit" routerLink="editar-post/colocarID">EDITAR</button>
+            <button class="btn delet" routerLink="excluir-post/colocarID">EXCLUIR</button>
+        </section>
+    </section>
+</section> -->
+
+<div class="post" *ngFor="let a of listPost">
+    <section class="cabecalhoPost">
+        <h1 class="tituloPost">{{a.nome}}</h1>
+        <div class="membroPost">
+            <p class="dataPost">{{a.data}}</p>
+        </div>
+    </section>
+
+    <!-- Conteúdo -->
+    <section class="conteudoPost">
+        <div class="imagem">
+            <img src="./assets/_iconPage.png">
+        </div>
+        <div class="texto">
+            <p>{{a.conteudo}}</p>
+            <p>{{a.conteudo}}</p>
+            <p>{{a.conteudo}}</p>
+            <p>{{a.conteudo}}</p>
+            <p>{{a.conteudo}}</p>
+            <p>{{a.conteudo}}</p>
+            <p>{{a.conteudo}}</p>
+            <p>{{a.conteudo}}</p>
+            <p>{{a.conteudo}}</p>
+        </div>
+
+    <!-- Botões CRUD -->
+    <section class="crud">
+        <button class="btn edit" routerLink="editar-post/{{a.id}}">EDITAR</button>
+        <button class="btn delet" routerLink="excluir-post/{{a.id}}">EXCLUIR</button>
+    </section>
+    </section>
+
+
+</div> 
