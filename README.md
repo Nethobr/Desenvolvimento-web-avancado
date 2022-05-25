@@ -6,4 +6,4 @@ Linguagem: TypeScript, NodeJS, CSS.
 
 Framework: Angular.
 
-IDE: Eclipse.
+IDE: VsCode.
