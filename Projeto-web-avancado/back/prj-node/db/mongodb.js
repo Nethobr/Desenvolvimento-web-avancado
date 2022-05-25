@@ -2,8 +2,8 @@ const { default: mongoose } = require("mongoose");
 
 //  Conectando no banco de dados mongo
 // String de conexão
-var str_connection = "mongodb://localhost:27017/regional_bv";
-mongoose.connect(str_connection);
+var url = "mongodb://localhost:27017/regional_bv";
+mongoose.connect(url);
 const con = mongoose.connection;
 
 //  Opções de monitoramento do banco mongo

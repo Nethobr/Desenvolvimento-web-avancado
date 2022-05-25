@@ -6,9 +6,9 @@
 </div>
 <table mat-table [dataSource]="listPost" >
 
-  <ng-container matColumnDef="id">
+  <ng-container matColumnDef="codigo">
     <th mat-header-cell *matHeaderCellDef> Id </th>
-    <td mat-cell *matCellDef="let a"> {{a.id}} </td>
+    <td mat-cell *matCellDef="let a"> {{a.codigo}} </td>
   </ng-container>
 
   <ng-container matColumnDef="nome">
@@ -24,8 +24,8 @@
   <ng-container matColumnDef="acoes">
     <th mat-header-cell *matHeaderCellDef style="text-align: center; padding-right: 35px"> Ações </th>
     <td class="ultima-coluna" mat-cell *matCellDef="let a">
-      <a routerLink="/cadastro/posts/editar/{{ a.id }}">Editar</a>
-      <a routerLink="/cadastro/posts/excluir/{{ a.id }}">Excluir</a>
+      <a routerLink="/cadastro/posts/editar/{{ a.codigo }}">Editar</a>
+      <a routerLink="/cadastro/posts/excluir/{{ a.codigo }}">Excluir</a>
     </td>
   </ng-container>
 

@@ -12,7 +12,7 @@ export class ListarPostComponent implements OnInit {
   //array que vai resceber todos o valores do banco
   listPost : Post [] = [];
   //Nome das colunas
-  colunas: string[] = ['id', 'nome', 'descricao', 'acoes'];
+  colunas: string[] = ['codigo', 'nome', 'descricao', 'acoes'];
 
   constructor(private cadastro: CadastroService) { }
 

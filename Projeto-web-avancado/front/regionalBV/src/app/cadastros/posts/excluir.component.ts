@@ -18,8 +18,8 @@ export class ExcluirComponent implements OnInit {
               private cadastro: CadastroService) { }
 
   ngOnInit(): void {
-    const str = this.route.snapshot.paramMap.get('id');
-    this.cadastro.buscarPorId(Number(str)).subscribe((post) => {
+    const str = this.route.snapshot.paramMap.get('codigo');
+    this.cadastro.buscarPorCodigo(Number(str)).subscribe((post) => {
       this.post = post;
     });
   }
@@ -27,7 +27,7 @@ export class ExcluirComponent implements OnInit {
   //função para excluir post
   exculirPost ()
   {
-    this.cadastro.excluir(this.post.id).subscribe
+    this.cadastro.excluir(this.post.codigo).subscribe
     (
       //Arrow function
       () => 

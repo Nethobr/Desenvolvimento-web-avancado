@@ -11,7 +11,7 @@ import { perguntas } from 'src/models/perguntas.models';
 export class CadastroService {
 
   //URL's
-  URL = "http://localhost:3001/post";
+  URL = "http://localhost:3000/posts";
   URLP = "http://localhost:3001/perguntas";
 
   constructor( private http: HttpClient ) 
@@ -19,8 +19,8 @@ export class CadastroService {
    
   }
 
-  buscarPorId(id : number) : Observable<Post>{
-    return this.http.get<Post>(this.URL + "/" + id);
+  buscarPorCodigo(codigo : number) : Observable<Post>{
+    return this.http.get<Post>(this.URL + "/" + codigo);
   }
 
 
@@ -29,14 +29,14 @@ export class CadastroService {
     return this.http.post<Post>(this.URL, post)
   }
 
-  editar(id: number, nome: Post)  : Observable<any>
+  editar(codigo: number, nome: Post)  : Observable<any>
   {
-    return this.http.put<Post>(this.URL + "/" + id, nome);
+    return this.http.put<Post>(this.URL + "/" + codigo, nome);
   }
 
-  excluir(id: number)  : Observable<any>
+  excluir(codigo: number)  : Observable<any>
   {
-    return this.http.delete<any>(this.URL + "/" + id);
+    return this.http.delete<any>(this.URL + "/" + codigo);
   }
 
   getPost() : Observable<Post[]>{

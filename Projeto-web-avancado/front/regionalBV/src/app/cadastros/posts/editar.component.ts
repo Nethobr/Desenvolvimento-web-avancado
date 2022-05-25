@@ -17,8 +17,8 @@ export class EditarComponent implements OnInit {
               private cadastro: CadastroService) { }
 
   ngOnInit(): void {
-    const str = this.route.snapshot.paramMap.get('id');
-    this.cadastro.buscarPorId(Number(str)).subscribe((post) => {
+    const str = this.route.snapshot.paramMap.get('codigo');
+    this.cadastro.buscarPorCodigo(Number(str)).subscribe((post) => {
       this.post = post;
     });
   }
@@ -26,7 +26,7 @@ export class EditarComponent implements OnInit {
   //função para salvar post
   editarPost ()
   {
-    this.cadastro.editar(this.post.id, this.post).subscribe
+    this.cadastro.editar(this.post.codigo, this.post).subscribe
     (
       //Arrow function
       () => 
