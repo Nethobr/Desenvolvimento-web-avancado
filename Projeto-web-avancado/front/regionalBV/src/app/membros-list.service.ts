@@ -13,12 +13,16 @@ import { Membros } from 'src/models/membros.models';
 export class MembrosListService {
 
   //Passamos a url da tabela para uma varável
-  URL = "http://localhost:3001/membros"
+  URL = "http://localhost:3000/membros";
 
   //Passamos o http para o constructor para ele carregar de início
   constructor(private http: HttpClient) 
   { 
 
+  }
+
+  buscarPorCodigo(codigo : number) : Observable<Membros>{
+    return this.http.get<Membros>(this.URL + "/" + codigo);
   }
 
   //Função para retornar a tabela

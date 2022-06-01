@@ -1,8 +1,7 @@
-export interface Membros
+export class Membros
 {
-    id: number,
-    nome: string,
-    instagram: string,
-    curso: string,
-    imagem: ImageData
+    codigo: Number = 0;
+    nome: string = '';
+    instagram: string = '';
+    curso: string = '';
 }

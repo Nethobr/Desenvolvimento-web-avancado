@@ -8,7 +8,9 @@ const express = require("express");
 const morgan = require("morgan");
 
 //importando a rotas
+const membroRouter = require('./routes/membroRoutes');
 const postRouter = require('./routes/postRoutes');
+
 
 // passando o expresse para o srv
 const srv = express();
@@ -24,6 +26,7 @@ srv.use(cors());
 // Onde tá a url que ele tá chengando
 srv.get('/', (req, res) => {res.send("Servidor express (GET)")});
 srv.use('/posts', postRouter);
+srv.use('/membros', membroRouter);
 
 // Local onde vai aparecer o servudor
 srv.listen(3000, () => {console.log ("Servidor express rodando!")});
