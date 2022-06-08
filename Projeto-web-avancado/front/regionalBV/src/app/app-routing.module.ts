@@ -37,8 +37,8 @@ const routes: Routes =
       [
         {path: "", component: ListarPostComponent},
         {path: "adicionar-post", component: IncluirPostComponent},
-        {path: "editar-post/:id", component: EditarPostComponent},
-        {path: "excluir-post/:id", component: ExcluirPostComponent}
+        {path: "editar-post/:codigo", component: EditarPostComponent},
+        {path: "excluir-post/:codigo", component: ExcluirPostComponent}
       ]
     },
     {path: "cadastro", component: CadastrosComponent,
